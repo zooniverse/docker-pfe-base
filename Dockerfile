@@ -2,6 +2,8 @@ FROM ubuntu:14.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
+WORKDIR /src
+
 RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y curl libfreetype6 libfontconfig1 git g++ flex bison \
         gperf ruby perl libsqlite3-dev libfontconfig1-dev libicu-dev \
