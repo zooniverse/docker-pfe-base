@@ -7,7 +7,7 @@ WORKDIR /src
 RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y curl libfreetype6 libfontconfig1 git g++ flex bison \
         gperf ruby perl libsqlite3-dev libfontconfig1-dev libicu-dev \
-        libssl-dev libpng-dev libjpeg-dev build-essential python && \
+        libssl-dev libpng-dev libjpeg-dev build-essential python unzip && \
     curl https://deb.nodesource.com/setup_0.12 | bash - && \
     apt-get install -y nodejs && \
     apt-get clean && \
